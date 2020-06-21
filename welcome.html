@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Dassault Systemes</title>
+</head>
+<link rel="stylesheet" href="./css/mycss1.css">
+<link rel="stylesheet" href="./css/mycss.css">
+<body>
+    <div class="main" id="main">
+            <nav class="navStyle">
+                <div class="logo">
+                    <i class="fa fa-stethoscope fa-3x " aria-hidden="true">&nbsp;Medidata Basics</i>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#" id="homeClick">Home</a></li>
+                        <li><a href="#" id="aboutus">About us</a></li>
+                        <li><a href="#" id="contactus">Contact us</a></li>
+                        <!-- <li><a href="#" >Check</a></li> -->
+                        
+                     </ul>
+                </div>
+               <!--<div class="popup">
+                    <div class="popup1"></div>
+                    <div class="popup2"></div>
+                </div>--> 
+                
+            </nav>
+
+         <div id="toggle">
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="images/sideImage.jpg" class="health"/>
+                <div id="circle">
+                        <div class="feature one">
+                            <i class="fa fa-ambulance fa-5x" aria-hidden="true"></i>
+                            <div>
+                                <h1>Health</h1>
+                                <p>Health is Wealth</p>
+                            </div>
+                        </div>
+                        <div class="feature two">
+                            <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i>
+                            <div>
+                                <h1>Health</h1>
+                                <p>Health is Wealth</p>
+                            </div>
+                        </div>
+                        <div class="feature three">
+                            <i class="fa fa-hospital-o fa-5x" aria-hidden="true"></i>
+                            <div>
+                                <h1>Health</h1>
+                                <p>Health is Wealth</p>
+                            </div>
+                        </div>
+                        <div class="feature four">
+                            <i class="fa fa-wheelchair-alt fa-5x" aria-hidden="true" ></i>
+                            <div>
+                                <h1>Health</h1>
+                                <p>Health is Wealth</p>
+                            </div>
+                        </div>
+                </div>
+
+               
+             </div>
+             <div class="controls">
+                
+                <i class="fa fa-chevron-up" aria-hidden="true" class="arrow" id="upbtn"></i>
+                <h3>Control</h3>
+                <i class="fa fa-chevron-down" aria-hidden="true" class="arrow" id="downbtn"></i>
+
+            </div>
+            <div class="controlsRight">
+                <i class="fa fa-chevron-right fa-3x" aria-hidden="true" class="arrow" id="rightarrow"></i>
+            </div>
+        </div>
+        <div id="calculate">
+           
+    <div class="row " id="page1">
+        <div class="col-my-12">
+            
+                <div class="col-my-2 sidebar">
+                    <ul class="ulcolumn">
+                      <li>Drag Study 1</li>
+                      <li>Drag Study 2</li>
+                      <li>Drag Study 3</li>
+                      
+                    </ul>
+                  </div>
+                  <div class="col-my-10"  >
+                      <div class="row" style="color: white;">
+                        <div class="col-my-4 center-data">
+                            <h4> Drop Here</h4>
+                         </div>
+                         <div class="col-my-4 center-data">
+                            <h4> Drag here</h4>
+                         </div>
+                         <div class="col-my-4 center-data">
+                            <h4> Descriptions</h4>
+                         </div>
+                      </div>
+                  </div>
+                  <div class="col-my-10" >
+                   
+                    <div class="col-my-4 center-data">
+                        <br/>
+                           <label><h3>India</h3></label>
+                           
+                           <div class="box" ondrop="drop1(event)" ondragover="allowDrop1(event)" id="div1" >
+                            
+                           </div>
+                           
+                    </div>
+                    
+                    <div class="col-my-4  center-data">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div class="valueData" draggable="true" ondragstart="drag1(event)" id="drag1">Hospital 1</div>
+                            <div class="valueData" draggable="true" ondragstart="drag1(event)" id="drag2">Hospital 2</div>
+                            
+                     </div>
+                     <div class="col-my-4  center-data">
+                        <br/>
+                        <br/>
+                        <br/>
+                       India is Mostly focus on
+                 </div>
+            </div>
+            <div class="col-my-10" >
+                    
+                    <div class="col-my-4 center-data">
+                        <br/>
+                        <br/>
+                           <label><h3>France</h3></label>
+                          
+                           <div class="box" ondrop="drop2(event)" ondragover="allowDrop2(event)" id="div2">
+                                
+                           </div>
+                    </div>
+                    
+                    <div class="col-my-4  center-data">
+                        <br/>
+                        <br/>
+                        <br/>
+                            <div class="valueData" draggable="true" ondragstart="drag2(event)" id="drag3">Hospital 3</div>
+                            <div class="valueData" draggable="true" ondragstart="drag2(event)" id="drag4">Hospital 4</div>
+                            <div class="valueData" draggable="true" ondragstart="drag2(event)" id="drag5">Hospital 5</div>
+                        </div>
+
+                        <div class="col-my-4  center-data">
+                            <br/>
+                            <br/>
+                            <br/>
+                           France is Mostly focus on
+                     </div>
+            </div>
+           </div>
+
+    </div>
+   
+
+    
+     </div>
+     <div id="about">
+        <div class="col-my-12"  id="page2">
+           <div class="col-my-4 imgdata aboutme"><img src="./images/aboutme.png"/></div>
+                    <div class="col-my-6 aboutdesc">
+                        <div class="indesc">
+                        <h1>About Us</h1>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odio? Odit voluptatem,
+                            veritatis necessitatibus similique harum, laboriosam repellat illum laudantium at quibusdam id doloribus ipsa molestias quos culpa natus deleniti!</div>
+                        </div> 
+            </div>
+        </div>
+    
+    <div id="contact">
+        <div class="col-my-12"  id="page3">
+            <div id="map" style="width:100%;height:400px;"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<script  src="./js/index.js" >
+
+</script>
+    <script  src="./js/index1.js" >
+
+    </script>
+  <script> 
+$(document).ready(function(){
+    $('#calculate').hide();
+    $('#about').hide();
+    $("#contact").hide();
+  $("#rightarrow").click(function(){
+    $("#toggle").hide(1000);
+    $('#calculate').show(1000);
+    $('#about').hide(1000);
+    $("#contact").hide(1000);
+  })
+  $("#homeClick").click(function(){
+    $("#toggle").show(2000);
+    $('#calculate').hide(1000);
+    $("#about").hide(1000);
+    $("#contact").hide(1000);
+    
+  })
+  $("#aboutus").click(function(){
+    $("#about").show(2000);
+    $('#calculate').hide(1000);
+    $('#toggle').hide(1000);
+    $("#contact").hide(2000);
+    
+  })
+  $("#contactus").click(function(){
+    $("#contact").show(2000);
+    $('#calculate').hide(1000);
+    $('#toggle').hide(1000);
+    $("#about").hide(1000);
+    
+  })
+});
+</script> 
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: -25.344, lng: 131.036};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dassault Systemes</title>
+</head>
+<link rel="stylesheet" href="./css/mycss.css">
+<body>
+    <!-- Header part-->
+    <div class="header page" >
+                <div class="brandLabel">Dassault</div>
+                <div class="menu">
+                    <ul class="ulrow">
+                        <li id="page1-corner" onclick="clickPage()">
+                            About us
+                        </li>
+                        <li>
+                            Contact us
+                        </li>
+                    </ul>
+                </div>
+    </div>
+    <div class="row " id="page1">
+        <div class="col-my-12">
+            
+                <div class="col-my-2 sidebar">
+                    <ul class="ulcolumn">
+                      <li>Drag Study 1</li>
+                      <li>Drag Study 2</li>
+                      <li>Drag Study 3</li>
+                      
+                    </ul>
+                  </div>
+                  <div class="col-my-10" >
+                      <div class="row">
+                        <div class="col-my-4 center-data">
+                            <h4> Drop Here</h4>
+                         </div>
+                         <div class="col-my-4 center-data">
+                            <h4> Drag here</h4>
+                         </div>
+                      </div>
+                  </div>
+                  <div class="col-my-10" >
+                   
+                    <div class="col-my-4 center-data">
+                           
+                           <label>India</label>
+                           <div class="box" ondrop="drop1(event)" ondragover="allowDrop1(event)" id="div1" >
+                            
+                           </div>
+                           
+                    </div>
+                    
+                    <div class="col-my-4  center-data">
+                            
+                            <div class="valueData" draggable="true" ondragstart="drag1(event)" id="drag1">Hospital 1</div>
+                            <div class="valueData" draggable="true" ondragstart="drag1(event)" id="drag2">Hospital 2</div>
+                            
+                     </div>
+            </div>
+            <div class="col-my-10" >
+                   
+                    <div class="col-my-4 center-data">
+                           
+                           <label>France</label>
+                           <div class="box" ondrop="drop2(event)" ondragover="allowDrop2(event)" id="div2">
+                                
+                           </div>
+                    </div>
+                    
+                    <div class="col-my-4  center-data">
+                           
+                            <div class="valueData" draggable="true" ondragstart="drag2(event)" id="drag3">Hospital 3</div>
+                            <div class="valueData" draggable="true" ondragstart="drag2(event)" id="drag4">Hospital 4</div>
+                            <div class="valueData" draggable="true" ondragstart="drag2(event)" id="drag5">Hospital 5</div>
+                        </div>
+            </div>
+           </div>
+
+    </div>
+    
+
+    <script  src="./js/index.js" >
+
+    </script>
+  
+</body>
+</html>
