@@ -39,28 +39,29 @@
                         <div class="feature one">
                             <i class="fa fa-ambulance fa-5x" aria-hidden="true"></i>
                             <div>
-                                <h1>Health</h1>
-                                <p>Health is Wealth</p>
+                                <h1>Van</h1>
+                                
+                                <p>Health is Wealth  </p>
                             </div>
                         </div>
                         <div class="feature two">
                             <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i>
                             <div>
-                                <h1>Health</h1>
+                                <h1>Heart</h1>
                                 <p>Health is Wealth</p>
                             </div>
                         </div>
                         <div class="feature three">
                             <i class="fa fa-hospital-o fa-5x" aria-hidden="true"></i>
                             <div>
-                                <h1>Health</h1>
+                                <h1>Hospital</h1>
                                 <p>Health is Wealth</p>
                             </div>
                         </div>
                         <div class="feature four">
                             <i class="fa fa-wheelchair-alt fa-5x" aria-hidden="true" ></i>
                             <div>
-                                <h1>Health</h1>
+                                <h1>Wheelchair</h1>
                                 <p>Health is Wealth</p>
                             </div>
                         </div>
@@ -86,12 +87,13 @@
             
                 <div class="col-my-2 sidebar">
                     <ul class="ulcolumn">
-                      <li>Drag Study 1</li>
-                      <li>Drag Study 2</li>
-                      <li>Drag Study 3</li>
+                      <li onclick="studyCall('study1')">Drag Study 1</li>
+                      <li onclick="studyCall('study2')">Drag Study 2</li>
+                      <li onclick="studyCall('study3')">Drag Study 3</li>
                       
                     </ul>
                   </div>
+                  <div id="study1">
                   <div class="col-my-10"  >
                       <div class="row" style="color: white;">
                         <div class="col-my-4 center-data">
@@ -101,7 +103,7 @@
                             <h4> Drag here</h4>
                          </div>
                          <div class="col-my-4 center-data">
-                            <h4> Descriptions</h4>
+                            <h4> Object</h4>
                          </div>
                       </div>
                   </div>
@@ -109,15 +111,15 @@
                    
                     <div class="col-my-4 center-data">
                         <br/>
-                           <label><h3>India</h3></label>
+                           <label><h3><div id="changeName">India&nbsp;<i class="fa fa-flag" aria-hidden="true"></i></div></h3></label>
                            
-                           <div class="box" ondrop="drop1(event)" ondragover="allowDrop1(event)" id="div1" >
+                           <div class="box check1" ondrop="drop1(event)" ondragover="allowDrop1(event)" id="div1" >
                             
                            </div>
                            
                     </div>
                     
-                    <div class="col-my-4  center-data">
+                    <div class="col-my-4  center-data" id="refr">
                             <br/>
                             <br/>
                             <br/>
@@ -129,7 +131,10 @@
                         <br/>
                         <br/>
                         <br/>
-                       India is Mostly focus on
+                      <b> <div id="objectname">India is Mostly focus on</div></b>
+                       <div id="res1">
+
+                       </div>
                  </div>
             </div>
             <div class="col-my-10" >
@@ -137,14 +142,14 @@
                     <div class="col-my-4 center-data">
                         <br/>
                         <br/>
-                           <label><h3>France</h3></label>
+                           <label><h3><div id="changeName1">France&nbsp;<i class="fa fa-flag" aria-hidden="true"></i></div></h3></label>
                           
-                           <div class="box" ondrop="drop2(event)" ondragover="allowDrop2(event)" id="div2">
+                           <div class="box check2" ondrop="drop2(event)" ondragover="allowDrop2(event)" id="div2">
                                 
                            </div>
                     </div>
                     
-                    <div class="col-my-4  center-data">
+                    <div class="col-my-4  center-data" id="refr1">
                         <br/>
                         <br/>
                         <br/>
@@ -157,9 +162,13 @@
                             <br/>
                             <br/>
                             <br/>
-                           France is Mostly focus on
+                          <b> <div id="objectname1">France is Mostly focus on</div></b>
+                           <div id="res2">
+
+                        </div>
                      </div>
             </div>
+        </div>
            </div>
 
     </div>
@@ -169,18 +178,44 @@
      </div>
      <div id="about">
         <div class="col-my-12"  id="page2">
-           <div class="col-my-4 imgdata aboutme"><img src="./images/aboutme.png"/></div>
+            <div class="col-my-4 middle"> 
+                            <div class="imgdata aboutme">
+                                <img src="./images/aboutme.png"/>
+                                </div>
+                            <div   class="imgdata aboutme1">
+                                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                            </div>
+            </div>
                     <div class="col-my-6 aboutdesc">
                         <div class="indesc">
                         <h1>About Us</h1>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odio? Odit voluptatem,
-                            veritatis necessitatibus similique harum, laboriosam repellat illum laudantium at quibusdam id doloribus ipsa molestias quos culpa natus deleniti!</div>
-                        </div> 
+                        <br/>
+                        <p>My name is Jayant Kumar. I am from Ranchi,Jharkhand.I have  3.1 years of experience as a UI Developer. currently working for
+                            Dassault Systemes (Medidata).
+                        </p>
+
+                        <br/>
+                        <h3>Skills known:</h3>
+                        
+                        <ul style="display: block">
+                            <li>React js</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                            <li>and etc...</li>
+                        </ul>
+                        <br/>
+                        <p style="margin-left: 300px; font-size: smaller;">to know more about me hover on image....</p>
+                        </div>
+                       </div> 
             </div>
         </div>
     
     <div class="container" id="contact">
-        <img src="images/location6.jpg" alt="back" class="contactimage"/>
+        <img src="images/location7.png" alt="back" class="contactimage"/>
         <div class="col-my-12"  id="page3">
             <div  class="col-sm-6 mapData">
              <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121030.324494155!2d73.74976664792989!3d18.56512631504736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c10bdd0c9411%3A0xe800335fd26ea313!2sDassault%20Systemes%20India!5e0!3m2!1sen!2sin!4v1592931536427!5m2!1sen!2sin" width="395" height="395" frameborder="0" style="border-radius:18px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
@@ -199,6 +234,7 @@
         </div>
     </div>
     </div>
+    
 </div>
 <script  src="./js/index.js" >
 
@@ -228,11 +264,11 @@ $(document).ready(function(){
     $("#about").show(2000);
     $('#calculate').hide(1000);
     $('#toggle').hide(1000);
-    $("#contact").hide(2000);
+    $("#contact").hide(1000);
     
   })
   $("#contactus").click(function(){
-    $("#contact").show(2000);
+    $("#contact").show(1000);
     $('#calculate').hide(1000);
     $('#toggle').hide(1000);
     $("#about").hide(1000);
@@ -240,25 +276,6 @@ $(document).ready(function(){
   })
 });
 </script> 
-<script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      var uluru = {lat: -25.344, lng: 131.036};
-      // The map, centered at Uluru
-      var map = new google.maps.Map(
-          document.getElementById('map'), {zoom: 4, center: uluru});
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({position: uluru, map: map});
-    }
-        </script>
-        <!--Load the API from the specified URL
-        * The async attribute allows the browser to render the page while the API loads
-        * The key parameter will contain your own API key (which is not needed for this tutorial)
-        * The callback parameter executes the initMap() function
-        -->
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-        </script>
+        
 </body>
 </html>
